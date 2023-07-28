@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/waste-management/static/css/main.280bce18.css",
+    "main.js": "/waste-management/static/js/main.3ea75a4f.js",
+    "static/js/787.227d4f8a.chunk.js": "/waste-management/static/js/787.227d4f8a.chunk.js",
+    "index.html": "/waste-management/index.html",
+    "main.280bce18.css.map": "/waste-management/static/css/main.280bce18.css.map",
+    "main.3ea75a4f.js.map": "/waste-management/static/js/main.3ea75a4f.js.map",
+    "787.227d4f8a.chunk.js.map": "/waste-management/static/js/787.227d4f8a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.280bce18.css",
+    "static/js/main.3ea75a4f.js"
+  ]
+}
