@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import WasteForm from './components/WasteForm';
+import WasteList from './components/WasteList';
+import WasteStats from './components/WasteStats';
+import Header from './components/Header';
+import React, { useState } from 'react';
 
 function App() {
+  const [wastes, setWastes] = useState([]);
+
+  const addWaste = (waste) => {
+    setWastes([...wastes, waste]);
+  };
+
+  const deleteWaste = (wasteId) => {
+    setWastes(wastes.filter((waste) => waste.id !== wasteId));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+      <WasteForm addWaste={addWaste} />
+      <WasteList wastes={wastes} deleteWaste={deleteWaste} />
+      <WasteStats wastes={wastes} />
     </div>
   );
 }

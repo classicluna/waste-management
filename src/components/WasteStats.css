@@ -1,0 +1,18 @@
+.waste-stats {
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.waste-stats h2 {
+  margin-top: 0;
+}
+
+.total-waste {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
